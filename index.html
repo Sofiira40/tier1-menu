@@ -1,166 +1,126 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Tier 1 Interventions Menu</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            background-color: #f8f9fa;
-            margin: 0;
-            padding: 20px;
-            color: #2c3e50;
-        }
-        h1 {
-            text-align: center;
-            color: #1a5276;
-        }
-        .section {
-            margin-bottom: 20px;
-            border-radius: 6px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-        }
-        .header {
-            padding: 15px;
-            background-color: #3498db;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            cursor: pointer;
-            border-radius: 6px 6px 0 0;
-        }
-        .content {
-            display: none;
-            background: white;
-            padding: 15px;
-            border-radius: 0 0 6px 6px;
-        }
-        ul {
-            margin: 0;
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 8px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Interactive Tier 1 Menu</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 40px;
+    }
+    .card {
+      margin: 15px auto;
+      border-radius: 8px;
+      overflow: hidden;
+      max-width: 800px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .card-header {
+      padding: 15px 20px;
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+      cursor: pointer;
+    }
+    .card-content {
+      display: none;
+      background: white;
+      padding: 15px 25px;
+    }
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    li {
+      margin: 10px 0;
+    }
+  </style>
 </head>
 <body>
-    <h1>Tier 1 Interventions Menu</h1>
+  <h1>📚 Interactive Tier 1 Intervention Menu</h1>
+"""
 
-    <div class="section">
-        <div class="header" onclick="toggleSection('section0')">Curriculum & Instruction</div>
-        <div id="section0" class="content">
-            <ul>
-    <li>Explicit phonics instruction (e.g., Heggerty, Jolly Phonics)</li><li>Inquiry-based modules (science, social studies)</li><li>Direct instruction with think-alouds</li><li>Reciprocal teaching</li><li>Concept mapping</li><li>Guided practice with immediate feedback</li><li>Gradual Release of Responsibility (GRR)</li><li>Cooperative learning and structured partner talk</li><li>Peer tutoring</li><li>Learning contracts</li>
-            </ul>
-        </div>
-    </div>
-    
-    <div class="section">
-        <div class="header" onclick="toggleSection('section1')">UDL: Representation</div>
-        <div id="section1" class="content">
-            <ul>
-    <li>Captioned videos</li><li>Digital texts with TTS and adjustable features</li><li>Anchor charts and visuals</li><li>Graphic organisers (mind maps, Venn diagrams)</li><li>Dual coding (visuals + words)</li><li>Multi-sensory input (auditory + visual cues)</li>
-            </ul>
-        </div>
-    </div>
-    
-    <div class="section">
-        <div class="header" onclick="toggleSection('section2')">UDL: Engagement</div>
-        <div id="section2" class="content">
-            <ul>
-    <li>Interactive tech tools (Jamboard, whiteboards)</li><li>Choice boards for interest-based access</li><li>Gamification tools (Kahoot, Blooket, Gimkit)</li><li>Culturally responsive provocations</li><li>Open-ended provocations and hooks</li>
-            </ul>
-        </div>
-    </div>
-    
-    <div class="section">
-        <div class="header" onclick="toggleSection('section3')">UDL: Expression</div>
-        <div id="section3" class="content">
-            <ul>
-    <li>Digital storytelling tools (Storybird, Canva)</li><li>Speech-to-text and audio recording tools</li><li>Student-selected output formats (video, comics, presentations)</li><li>Low floor/high ceiling design</li><li>Flexible assessment and creative project options</li>
-            </ul>
-        </div>
-    </div>
-    
-    <div class="section">
-        <div class="header" onclick="toggleSection('section4')">Differentiation Strategies</div>
-        <div id="section4" class="content">
-            <ul>
-    <li>Tiered assignments by readiness</li><li>Learning menus with scaffolds</li><li>Choice boards with visual support</li><li>Flexible grouping (needs/interests/strengths)</li><li>Mini-lessons and small group follow-up</li><li>Leveled materials and scaffolded texts</li>
-            </ul>
-        </div>
-    </div>
-    
-    <div class="section">
-        <div class="header" onclick="toggleSection('section5')">Executive Functioning Supports</div>
-        <div id="section5" class="content">
-            <ul>
-    <li>Daily planners, visual schedules, timers</li><li>Digital calendars and agenda apps</li><li>‘Get Ready, Do, Done’ frames</li><li>Step-by-step checklists and task breakdowns</li><li>Self-monitoring tools (trackers, reflection check-ins)</li><li>Visual timers and reminder cues</li>
-            </ul>
-        </div>
-    </div>
-    
-    <div class="section">
-        <div class="header" onclick="toggleSection('section6')">Social-Emotional Learning (SEL)</div>
-        <div id="section6" class="content">
-            <ul>
-    <li>Mindfulness routines (5-4-3-2-1, breathing breaks)</li><li>Restorative circles and relationship check-ins</li><li>Emotion regulation anchor charts and tools</li><li>Role play and social stories</li><li>Perspective-taking and empathy-building activities</li><li>Zones of Regulation visual supports</li>
-            </ul>
-        </div>
-    </div>
-    
-    <div class="section">
-        <div class="header" onclick="toggleSection('section7')">Behaviour & Classroom Management</div>
-        <div id="section7" class="content">
-            <ul>
-    <li>Co-created expectations and class norms</li><li>Visual behaviour matrices and prompts</li><li>Calm Down Corners or Reset Zones</li><li>Scheduled brain breaks and movement routines</li><li>Predictable routines and clear visual structure</li><li>Positive reinforcement systems (e.g., token economies)</li>
-            </ul>
-        </div>
-    </div>
-    
-    <div class="section">
-        <div class="header" onclick="toggleSection('section8')">Culturally Responsive & Relevant Teaching</div>
-        <div id="section8" class="content">
-            <ul>
-    <li>Texts reflecting student identity & lived experience</li><li>Home language materials or dual-language books</li><li>Community guest speakers and co-teaching</li><li>Projects linked to local/global issues</li><li>Student choice in inquiry and content</li><li>Celebration of cultural holidays, identities, and voices</li>
-            </ul>
-        </div>
-    </div>
-    
-    <div class="section">
-        <div class="header" onclick="toggleSection('section9')">High-Impact Instructional Practices</div>
-        <div id="section9" class="content">
-            <ul>
-    <li>Learning intentions & success criteria posted</li><li>Modelled and worked examples with scaffolding</li><li>Think-alouds and metacognitive prompts</li><li>Timely, specific, and descriptive feedback</li><li>Spaced and retrieval practice</li><li>Peer tutoring and teaching routines</li>
-            </ul>
-        </div>
-    </div>
-    
-    <div class="section">
-        <div class="header" onclick="toggleSection('section10')">Formative Assessment</div>
-        <div id="section10" class="content">
-            <ul>
-    <li>Exit tickets and quick writes</li><li>Digital formative tools (Padlet, Quizizz, Formative)</li><li>Peer- and self-assessment rubrics</li><li>Learning check-ins (thumbs up/down, fist-to-five)</li><li>Student conferencing</li><li>Success criteria checklists</li>
-            </ul>
-        </div>
-    </div>
-    
-    <div class="section">
-        <div class="header" onclick="toggleSection('section11')">Family & Community Engagement</div>
-        <div id="section11" class="content">
-            <ul>
-    <li>Weekly bilingual newsletters</li><li>Parent-teacher conferences with interpretation</li><li>Strengths-based phone/email updates</li><li>Homework choice boards and menus</li><li>Family invitations to events and community celebrations</li><li>Collaborative goal setting with families</li>
-            </ul>
-        </div>
-    </div>
-    
+# Colours and icons per category
+categories = {
+    "📘 Curriculum & Instruction": ("#5C6BC0", [
+        "Explicit phonics instruction (e.g., Heggerty, Jolly Phonics)",
+        "Inquiry-based modules (science, social studies)",
+        "Direct instruction with think-alouds",
+        "Reciprocal teaching",
+        "Concept mapping",
+        "Guided practice with immediate feedback"
+    ]),
+    "🧠 UDL: Representation": ("#42A5F5", [
+        "Captioned videos", "Digital texts with TTS",
+        "Anchor charts", "Graphic organisers", "Dual coding visuals + words"
+    ]),
+    "🎮 UDL: Engagement": ("#26A69A", [
+        "Interactive tech (Jamboard, whiteboards)",
+        "Choice boards", "Gamification (Kahoot, Blooket)", "Culturally responsive hooks"
+    ]),
+    "🎤 UDL: Expression": ("#AB47BC", [
+        "Digital storytelling", "Speech-to-text tools",
+        "Flexible formats (video, slideshow)", "Low floor/high ceiling tasks"
+    ]),
+    "🗂️ Executive Functioning Supports": ("#FF7043", [
+        "Daily planners, visual schedules", "Digital calendars",
+        "‘Get Ready, Do, Done’ frames", "Checklists and task chunking"
+    ]),
+    "💖 Social-Emotional Learning (SEL)": ("#F06292", [
+        "Mindfulness routines", "Restorative circles", "Emotion regulation tools",
+        "Role play and social scripts"
+    ]),
+    "🎯 Differentiation": ("#66BB6A", [
+        "Tiered assignments", "Learning menus", "Flexible grouping",
+        "Mini-lessons", "Leveled materials"
+    ]),
+    "🌍 Culturally Responsive Teaching": ("#EF5350", [
+        "Identity-reflecting texts", "Home language supports",
+        "Guest speakers", "Global/local project connections"
+    ]),
+    "🎯 Behaviour & Classroom Management": ("#8D6E63", [
+        "Co-created norms", "Behaviour matrices", "Brain breaks",
+        "Calm Down Corners", "Predictable routines"
+    ]),
+    "📝 Formative Assessment": ("#FBC02D", [
+        "Exit tickets", "Padlet, Quizizz", "Peer rubrics", "Success checklists"
+    ]),
+    "🏡 Family & Community Engagement": ("#90A4AE", [
+        "Bilingual newsletters", "Conference interpreters",
+        "Homework menus", "Event invitations"
+    ])
+}
+
+# Build HTML
+counter = 0
+for title, (color, items) in categories.items():
+    styled_html += f"""
+    <div class="card">
+      <div class="card-header" onclick="toggleCard('content{counter}')" style="background-color: {color};">
+        {title}
+      </div>
+      <div class="card-content" id="content{counter}">
+        <ul>
+    """
+    for item in items:
+        styled_html += f"<li>{item}</li>"
+    styled_html += "</ul></div></div>"
+    counter += 1
+
+# Add JavaScript
+styled_html += """
 <script>
-    function toggleSection(id) {
-        const section = document.getElementById(id);
-        section.style.display = section.style.display === "block" ? "none" : "block";
-    }
+  function toggleCard(id) {
+    const content = document.getElementById(id);
+    content.style.display = content.style.display === "block" ? "none" : "block";
+  }
 </script>
 </body>
 </html>
