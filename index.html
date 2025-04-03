@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,77 +46,84 @@
 </head>
 <body>
   <h1>📚 Interactive Tier 1 Intervention Menu</h1>
-"""
 
-# Colours and icons per category
-categories = {
-    "📘 Curriculum & Instruction": ("#5C6BC0", [
-        "Explicit phonics instruction (e.g., Heggerty, Jolly Phonics)",
-        "Inquiry-based modules (science, social studies)",
-        "Direct instruction with think-alouds",
-        "Reciprocal teaching",
-        "Concept mapping",
-        "Guided practice with immediate feedback"
-    ]),
-    "🧠 UDL: Representation": ("#42A5F5", [
-        "Captioned videos", "Digital texts with TTS",
-        "Anchor charts", "Graphic organisers", "Dual coding visuals + words"
-    ]),
-    "🎮 UDL: Engagement": ("#26A69A", [
-        "Interactive tech (Jamboard, whiteboards)",
-        "Choice boards", "Gamification (Kahoot, Blooket)", "Culturally responsive hooks"
-    ]),
-    "🎤 UDL: Expression": ("#AB47BC", [
-        "Digital storytelling", "Speech-to-text tools",
-        "Flexible formats (video, slideshow)", "Low floor/high ceiling tasks"
-    ]),
-    "🗂️ Executive Functioning Supports": ("#FF7043", [
-        "Daily planners, visual schedules", "Digital calendars",
-        "‘Get Ready, Do, Done’ frames", "Checklists and task chunking"
-    ]),
-    "💖 Social-Emotional Learning (SEL)": ("#F06292", [
-        "Mindfulness routines", "Restorative circles", "Emotion regulation tools",
-        "Role play and social scripts"
-    ]),
-    "🎯 Differentiation": ("#66BB6A", [
-        "Tiered assignments", "Learning menus", "Flexible grouping",
-        "Mini-lessons", "Leveled materials"
-    ]),
-    "🌍 Culturally Responsive Teaching": ("#EF5350", [
-        "Identity-reflecting texts", "Home language supports",
-        "Guest speakers", "Global/local project connections"
-    ]),
-    "🎯 Behaviour & Classroom Management": ("#8D6E63", [
-        "Co-created norms", "Behaviour matrices", "Brain breaks",
-        "Calm Down Corners", "Predictable routines"
-    ]),
-    "📝 Formative Assessment": ("#FBC02D", [
-        "Exit tickets", "Padlet, Quizizz", "Peer rubrics", "Success checklists"
-    ]),
-    "🏡 Family & Community Engagement": ("#90A4AE", [
-        "Bilingual newsletters", "Conference interpreters",
-        "Homework menus", "Event invitations"
-    ])
-}
-
-# Build HTML
-counter = 0
-for title, (color, items) in categories.items():
-    styled_html += f"""
     <div class="card">
-      <div class="card-header" onclick="toggleCard('content{counter}')" style="background-color: {color};">
-        {title}
+      <div class="card-header" onclick="toggleCard('content0')" style="background-color: #5C6BC0;">
+        📘 Curriculum & Instruction
       </div>
-      <div class="card-content" id="content{counter}">
+      <div class="card-content" id="content0">
         <ul>
-    """
-    for item in items:
-        styled_html += f"<li>{item}</li>"
-    styled_html += "</ul></div></div>"
-    counter += 1
-
-# Add JavaScript
-styled_html += """
+    <li>Explicit phonics instruction (e.g., Heggerty, Jolly Phonics)</li><li>Inquiry-based modules (science, social studies)</li><li>Direct instruction with think-alouds</li><li>Reciprocal teaching</li><li>Concept mapping</li><li>Guided practice with immediate feedback</li></ul></div></div>
+    <div class="card">
+      <div class="card-header" onclick="toggleCard('content1')" style="background-color: #42A5F5;">
+        🧠 UDL: Representation
+      </div>
+      <div class="card-content" id="content1">
+        <ul>
+    <li>Captioned videos</li><li>Digital texts with TTS</li><li>Anchor charts</li><li>Graphic organisers</li><li>Dual coding visuals + words</li></ul></div></div>
+    <div class="card">
+      <div class="card-header" onclick="toggleCard('content2')" style="background-color: #26A69A;">
+        🎮 UDL: Engagement
+      </div>
+      <div class="card-content" id="content2">
+        <ul>
+    <li>Interactive tech (Jamboard, whiteboards)</li><li>Choice boards</li><li>Gamification (Kahoot, Blooket)</li><li>Culturally responsive hooks</li></ul></div></div>
+    <div class="card">
+      <div class="card-header" onclick="toggleCard('content3')" style="background-color: #AB47BC;">
+        🎤 UDL: Expression
+      </div>
+      <div class="card-content" id="content3">
+        <ul>
+    <li>Digital storytelling</li><li>Speech-to-text tools</li><li>Flexible formats (video, slideshow)</li><li>Low floor/high ceiling tasks</li></ul></div></div>
+    <div class="card">
+      <div class="card-header" onclick="toggleCard('content4')" style="background-color: #FF7043;">
+        🗂️ Executive Functioning Supports
+      </div>
+      <div class="card-content" id="content4">
+        <ul>
+    <li>Daily planners, visual schedules</li><li>Digital calendars</li><li>‘Get Ready, Do, Done’ frames</li><li>Checklists and task chunking</li></ul></div></div>
+    <div class="card">
+      <div class="card-header" onclick="toggleCard('content5')" style="background-color: #F06292;">
+        💖 Social-Emotional Learning (SEL)
+      </div>
+      <div class="card-content" id="content5">
+        <ul>
+    <li>Mindfulness routines</li><li>Restorative circles</li><li>Emotion regulation tools</li><li>Role play and social scripts</li></ul></div></div>
+    <div class="card">
+      <div class="card-header" onclick="toggleCard('content6')" style="background-color: #66BB6A;">
+        🎯 Differentiation
+      </div>
+      <div class="card-content" id="content6">
+        <ul>
+    <li>Tiered assignments</li><li>Learning menus</li><li>Flexible grouping</li><li>Mini-lessons</li><li>Leveled materials</li></ul></div></div>
+    <div class="card">
+      <div class="card-header" onclick="toggleCard('content7')" style="background-color: #EF5350;">
+        🌍 Culturally Responsive Teaching
+      </div>
+      <div class="card-content" id="content7">
+        <ul>
+    <li>Identity-reflecting texts</li><li>Home language supports</li><li>Guest speakers</li><li>Global/local project connections</li></ul></div></div>
+    <div class="card">
+      <div class="card-header" onclick="toggleCard('content8')" style="background-color: #8D6E63;">
+        🎯 Behaviour & Classroom Management
+      </div>
+      <div class="card-content" id="content8">
+        <ul>
+    <li>Co-created norms</li><li>Behaviour matrices</li><li>Brain breaks</li><li>Calm Down Corners</li><li>Predictable routines</li></ul></div></div>
+    <div class="card">
+      <div class="card-header" onclick="toggleCard('content9')" style="background-color: #FBC02D;">
+        📝 Formative Assessment
+      </div>
+      <div class="card-content" id="content9">
+        <ul>
+    <li>Exit tickets</li><li>Padlet, Quizizz</li><li>Peer rubrics</li><li>Success checklists</li></ul></div></div>
+    <div class="card">
+      <div class="card-header" onclick="toggleCard('content10')" style="background-color: #90A4AE;">
+        🏡 Family & Community Engagement
+      </div>
+      <div class="card-content" id="content10">
+        <ul>
+    <li>Bilingual newsletters</li><li>Conference interpreters</li><li>Homework menus</li><li>Event invitations</li></ul></div></div>
 <script>
   function toggleCard(id) {
     const content = document.getElementById(id);
